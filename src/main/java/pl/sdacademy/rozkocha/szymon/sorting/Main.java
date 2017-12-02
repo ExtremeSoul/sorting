@@ -1,6 +1,7 @@
 package pl.sdacademy.rozkocha.szymon.sorting;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
@@ -20,6 +21,7 @@ public class Main {
 
         System.out.println(numbers);
 
-        System.out.println(BubbleSort.sort(numbers));
+        //System.out.println(BubbleSort.sort(numbers, Comparator.naturalOrder()));
+        System.out.println(QuickSort.sort(numbers));
     }
 }
