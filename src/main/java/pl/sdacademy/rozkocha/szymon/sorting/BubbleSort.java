@@ -5,7 +5,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class BubbleSort{
-    public static <Type> List<Type> sort(List<Type> list, Comparator<Type> comparator) {
+    public static <Type> List<Type> sort(List<Type> list,
+                                     Comparator<Type> comparator) {
         List<Type> result = new ArrayList<>(list);
 
         for(int i = 0;i < result.size() - 1;++i) {
