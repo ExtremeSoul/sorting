@@ -9,9 +9,9 @@ public class Main {
     public static void main(String[] args) {
         Random random = new Random();
 
-        //int size = random.nextInt(11) + 5;
+        int size = random.nextInt(11) + 5;
 
-        int size = 5;
+        //int size = 5;
 
         List<Integer> numbers = new ArrayList<Integer>(size);
 
