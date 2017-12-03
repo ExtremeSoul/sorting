@@ -19,9 +19,12 @@ public class Main {
             numbers.add(random.nextInt(21));
         }
 
-        System.out.println(numbers);
+        System.out.println("A" + numbers);
+        System.out.println();
 
-        //System.out.println(BubbleSort.sort(numbers, Comparator.naturalOrder()));
-        System.out.println(QuickSort.sort(numbers, Comparator.reverseOrder()));
+        System.out.println("B" + BubbleSort.sort(numbers, Comparator.naturalOrder()));
+        System.out.println(QuickSort.sort(numbers, Comparator.naturalOrder()));
+        System.out.println(InsertionSort.sort(numbers, Comparator.reverseOrder()));
+        System.out.println(SelectionSort.sort(numbers, Comparator.reverseOrder()));
     }
 }

@@ -1,13 +1,13 @@
 package pl.sdacademy.rozkocha.szymon.sorting;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 
 public class BubbleSort{
-    public static <Type> List<Type> sort(List<Type> list,
-                                     Comparator<Type> comparator) {
-        List<Type> result = new ArrayList<>(list);
+    public static <Type> List<Type> sort(Collection<Type> collection, Comparator<Type> comparator) {
+        List<Type> result = new ArrayList<>(collection);
 
         for(int i = 0;i < result.size() - 1;++i) {
             for(int j = 0;j < result.size() - 1 - i;++j) {
